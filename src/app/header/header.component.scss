@@ -1,0 +1,20 @@
+@import '../_core/styles';
+
+.header-container {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 0px;
+
+    .header-title {
+        font-size: $large-font;
+
+        padding-left: 50px;
+
+        margin-right: 100px;
+    }
+
+    .search-container {
+        width: 40%;
+    }
+}

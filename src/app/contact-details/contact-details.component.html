@@ -1,0 +1,25 @@
+<div class="contact-details-container">
+    <div class="primary-data-container">
+        <div>
+            <img src="{{ contact.pictureUrl }}">
+        </div>
+        <div class="name-container">
+            {{ contact.fullName }}
+        </div>
+        <div>
+            {{ contact.age }}, {{ contact.fullGenderLabel }}
+        </div>
+    </div>
+    <div class="contact-data-container">
+        <div *ngFor="let detail of contactDetailDataFields">
+            <div class="contact-field-label">
+                {{ detail.label }}
+            </div>
+            <div class="contact-field-divider">
+            </div>
+            <div class="contact-field-data">
+                {{ detail.value }}
+            </div>
+        </div>
+    </div>
+</div>

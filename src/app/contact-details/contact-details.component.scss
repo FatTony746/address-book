@@ -1,0 +1,53 @@
+.contact-details-container {
+    padding: 0px 20px;
+
+    > div {
+        padding:20px;
+        margin: 20px;
+        box-shadow: 0px 3px 5px grey;
+    }
+
+    .primary-data-container {
+        > div {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 100px;
+        }
+
+        .name-container {
+            font-size: 36px;
+            font-weight: 800;
+        }
+    }
+
+    .contact-data-container {
+        > div {
+            display: flex;
+            padding: 0px 5px;
+
+            .contact-field-label, .contac-field-data {
+                padding-bottom: 10px;
+            }
+
+            .contact-field-label {
+                color: grey;
+                text-align: end;
+                width: 45%;
+            }
+
+            .contact-field-divider {
+                background: grey;
+                width: 1px;
+                margin: 0px 10px;
+            }
+
+            .contact-field-data {
+                width: 35%;
+            }
+        }
+    }
+}
