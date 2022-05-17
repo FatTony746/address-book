@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, take } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { APP_CONSTS } from '../../_core/consts/app.consts';
 import { GENDER } from '../../_core/enums/gender.enum';
 import { IAction } from '../../_core/interfaces/action.interface';
