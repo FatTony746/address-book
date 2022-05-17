@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 70px;
 
-    border-bottom: 2px solid $grey;
+    border-bottom: 2px solid #666666;
   }
 
   .body-container {
@@ -35,7 +35,7 @@
 
     min-width: 500px;
     height: 100vh;
-    background-color: $white;
+    background-color: #ffffff;
 
     z-index: 50;
 
@@ -55,7 +55,7 @@
 
       width: 100%;
 
-      background-color: $white;
+      background-color: #ffffff;
 
       z-index: 500;
     }
