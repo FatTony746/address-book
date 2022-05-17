@@ -1,73 +1,71 @@
-@import './_core/styles';
-
 .app-container {
-    .header-container {
-        position: fixed;
+  .header-container {
+    position: fixed;
 
-        width: 100%;
-        min-height: 70px;
+    width: 100%;
+    min-height: 70px;
 
-        border-bottom: 2px solid $grey;
+    border-bottom: 2px solid $grey;
+  }
+
+  .body-container {
+    position: fixed;
+    top: 75px;
+
+    width: 100%;
+    height: 90vh;
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      height: 90vh;
     }
 
-    .body-container {
-        position: fixed;
-        top: 75px;
+    .router-container {
+      width: 100%;
+    }
+  }
 
-        width: 100%;
-        height: 90vh;
+  .side-sheet-container {
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
 
-        .menu-container {
-            position: fixed;
-            top: 0;
-            height: 90vh;
-        }
+    right: 0;
 
-        .router-container {
-            width: 100%;
-        }
+    min-width: 500px;
+    height: 100vh;
+    background-color: $white;
+
+    z-index: 50;
+
+    &.open {
+      box-shadow: -5px 0px 15px grey;
     }
 
-    .side-sheet-container {
-        position: fixed;
-        overflow-y: auto;
-        overflow-x: hidden;
-    
-        right: 0;
-    
-        min-width: 500px;
-        height: 100vh;
-        background-color: $white;
-    
-        z-index: 50;
-
-        &.open {
-            box-shadow: -5px 0px 15px grey;
-        }
-
-        &.closed {
-            box-shadow: unset;
-        }
-    
-        .side-sheet-action-bar {
-            padding: 20px 20px 0px;
-
-            position: sticky;
-            top: 0px;
-            
-            width: 100%;
-    
-            background-color: $white;
-    
-            z-index: 500;
-        }
+    &.closed {
+      box-shadow: unset;
     }
 
-    .small-overlay-container {
-        width: 40%;
+    .side-sheet-action-bar {
+      padding: 20px 20px 0px;
+
+      position: sticky;
+      top: 0px;
+
+      width: 100%;
+
+      background-color: $white;
+
+      z-index: 500;
     }
-    
-    .large-overlay-container {
-        width: 80%;
-    }    
+  }
+
+  .small-overlay-container {
+    width: 40%;
+  }
+
+  .large-overlay-container {
+    width: 80%;
+  }
 }
