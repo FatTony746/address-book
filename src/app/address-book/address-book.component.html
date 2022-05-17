@@ -1,11 +1,10 @@
-<div class="address-book-container"
-     appInfiniteScrollContainer
-     (onScrolledToBottom)="onScrollToBottom()"
-     [isLoading]="isLoading$ | async">
-    <div>
-        <app-contact-card *ngFor="let contact of state.filteredContacts"
-                           [contact]="contact"
-                           (click)="onContactSelected(contact)">
-        </app-contact-card>
-    </div>
+<div class="address-book-container">
+  <div>
+    <app-contact-card
+      *ngFor="let contact of state.filteredContacts"
+      [contact]="contact"
+      (click)="onContactSelected(contact)"
+    >
+    </app-contact-card>
+  </div>
 </div>
